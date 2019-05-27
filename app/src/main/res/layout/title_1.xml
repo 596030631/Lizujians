@@ -1,0 +1,11 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/shape_gra_title">
+    <TextView android:id="@+id/title_text_2" android:layout_width="40dp" android:paddingLeft="5dp" android:layout_height="30dp" android:paddingTop="10dp" android:text="首页" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:textColor="#fff" android:layout_marginBottom="7dp"/>
+    <View android:visibility="gone" android:id="@+id/title_line_2" android:layout_width="28dp"  android:layout_marginLeft="5dp" android:layout_height="1.5dp"  android:layout_alignLeft="@id/title_text_2" android:background="@drawable/shape_rect_circle" android:layout_marginTop="55dp"/>
+    <TextView android:id="@+id/title_text_1" android:layout_width="40dp" android:paddingLeft="5dp" android:layout_height="30dp" android:paddingTop="10dp" android:text="发现" android:layout_toLeftOf="@id/title_text_2" android:layout_marginRight="50dp" android:textColor="#fff" android:layout_alignParentBottom="true" android:layout_marginBottom="7dp"/>
+    <View android:visibility="gone" android:id="@+id/title_line_1" android:layout_width="28dp" android:layout_marginLeft="5dp"  android:layout_height="1.5dp"  android:layout_alignLeft="@id/title_text_1" android:background="@drawable/shape_rect_circle" android:layout_marginTop="55dp"/>
+    <TextView android:id="@+id/title_text_3"   android:layout_width="40dp" android:paddingLeft="5dp" android:layout_height="30dp" android:paddingTop="10dp" android:text="我的" android:layout_toRightOf="@id/title_text_2" android:layout_marginLeft="50dp" android:textColor="#fff" android:layout_marginBottom="7dp" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"/>
+    <View android:visibility="gone" android:id="@+id/title_line_3"   android:layout_marginLeft="5dp" android:layout_width="28dp" android:layout_height="1.5dp"  android:layout_marginTop="55dp" android:layout_alignLeft="@id/title_text_3" android:background="@drawable/shape_rect_circle"/>
+
+</RelativeLayout>

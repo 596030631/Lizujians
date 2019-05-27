@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adBlockDiv">
+        <item>mui-mbarp-qrcode-hd mui-mbarp-qrcode-hd-d</item>
+        <item>header-banner</item>
+        <item>mui-mbarp-qrcode-bd </item>
+    </string-array>
+</resources>

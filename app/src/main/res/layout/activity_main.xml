@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:orientation="vertical">
+    <include layout="@layout/title_1"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_viewpage_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="-80dp"/>
+<View android:layout_height="0.1dp" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginBottom="45dp" android:background="#ccc"/>
+    <LinearLayout
+        android:id="@+id/ll_main_all_btn"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_main_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout android:id="@+id/btn_page1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:gravity="center">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/icon_page1"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/page1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btn_page2" android:layout_width="0dp"   android:layout_weight="1" android:layout_height="40dp" android:gravity="center">
+            <TextView
+                android:id="@+id/icon_page2"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/page2_0"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View android:layout_height="30dp" android:layout_width="0dp" android:layout_weight="1"/>
+        <LinearLayout android:id="@+id/btn_page3" android:layout_width="0dp"   android:layout_weight="1" android:layout_height="40dp" android:gravity="center">
+            <TextView
+                android:id="@+id/icon_page3"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/page3_0"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+        </LinearLayout>
+        <LinearLayout  android:id="@+id/btn_page4" android:layout_width="0dp"   android:layout_weight="1" android:layout_height="40dp" android:gravity="center">
+            <TextView
+                android:id="@+id/icon_page4"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/page4_0"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_main_scan"
+        android:background="@drawable/saoyisao1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>

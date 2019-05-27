@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/app_title_state"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/bachground_login_1"/>
+    <View
+        android:alpha="0.4"
+        android:background="@drawable/shape_app_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+        <ImageView
+            android:alpha="0.6"
+            android:padding="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="32">
+                    <android.support.design.widget.TextInputEditText
+                        android:alpha="0.2"
+                        android:id="@+id/et_login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_edit_login"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:textCursorDrawable="@drawable/shape_cursor_color"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/user"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+                    <android.support.design.widget.TextInputEditText
+                        android:alpha="0.2"
+                        android:id="@+id/et_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textCursorDrawable="@drawable/shape_cursor_color"
+                        android:background="@drawable/shape_edit_login"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/password"
+                    android:layout_marginLeft="5dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_login_in"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="登录"
+                android:background="@drawable/shape_button_login"/>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_register_in"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="注册"
+                android:background="@drawable/shape_button_login"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

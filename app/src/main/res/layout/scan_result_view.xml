@@ -1,0 +1,29 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <View android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<TextView
+    android:layout_centerHorizontal="true"
+    android:layout_width="100dp"
+    android:layout_height="250dp"
+    android:text="识别结果"/>
+    <TextView
+    android:layout_width="100dp"
+    android:layout_height="250dp"
+    android:id="@+id/text_result"/>
+
+    <TextView
+        android:id="@+id/that_ok"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="了解"/>
+  <TextView
+      android:id="@+id/scan_restart"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="重新扫码"/>
+
+</RelativeLayout>

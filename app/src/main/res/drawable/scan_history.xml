@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/scan_history" android:state_pressed="true" tools:ignore="ResourceCycle" />
+    <item android:drawable="@drawable/scan_history" tools:ignore="ResourceCycle" />
+
+</selector>
