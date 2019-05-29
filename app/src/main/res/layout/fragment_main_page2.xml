@@ -136,7 +136,7 @@
             android:layout_height="200dp"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp" />
+            android:layout_height="120dp" />
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

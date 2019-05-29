@@ -402,6 +402,10 @@ public final class CaptureActivity extends Activity implements
 		Log.e("TAG","识别结果："+ResultParser.parseResult(rawResult).toString());
 		commondDialog = new CommondDialog(this,R.style.dialog,ResultParser.parseResult(rawResult).toString(),new CommondDialog.OnCloseListener(){
 
+
+
+
+
 			@Override
 			public void onClick(Dialog dialog, boolean confirm) {
 				if(confirm){

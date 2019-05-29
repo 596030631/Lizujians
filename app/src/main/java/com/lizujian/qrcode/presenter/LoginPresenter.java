@@ -10,8 +10,8 @@ import com.lizujian.qrcode.bean.LoginBean;
 import com.lizujian.qrcode.http.RxScheduler;
 import com.lizujian.qrcode.model.LoginModel;
 import com.lizujian.qrcode.sql.PreferencesService;
-import com.lizujian.qrcode.ui.LoginActivity;
-import com.lizujian.qrcode.ui.MainActivity;
+import com.lizujian.qrcode.view.LoginActivity;
+import com.lizujian.qrcode.view.MainActivity;
 
 import io.reactivex.functions.Consumer;
 

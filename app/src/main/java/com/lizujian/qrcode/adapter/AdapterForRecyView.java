@@ -99,6 +99,7 @@ public class AdapterForRecyView extends RecyclerView.Adapter<AdapterForRecyView.
         return mList.size();
     }
 
+
     class MyAdapter extends RecyclerView.ViewHolder {
 
         private TextView bt1;
