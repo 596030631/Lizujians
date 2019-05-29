@@ -172,8 +172,9 @@ public class MainFragmentPage2 extends BaseFragment<MainActivity> implements Vie
                 break;
 
             case R.id.btn_make_qrcode:
-                List<MilkInfo> mList = getDataFromSql();
+                List<MilkInfo> mList = new ArrayList<>();
                 try{
+                    mList = getDataFromSql();
                     String info =
                             mList.get(mList.size()-1).getT1().getLyfs()+","       +mList.get(mList.size()-1).getT1().getNnzk()+","    +mList.get(mList.size()-1).getT1().getCzy()+","+
                                     mList.get(mList.size()-1).getT2().getJgcs()+","       +mList.get(mList.size()-1).getT2().getJgzq()+","    +mList.get(mList.size()-1).getT2().getGlbz()+","     +mList.get(mList.size()-1).getT2().getSjfs()+","+
@@ -187,6 +188,7 @@ public class MainFragmentPage2 extends BaseFragment<MainActivity> implements Vie
                 }catch (Exception e){
                     Toast.makeText(mContext, "数据不完整", Toast.LENGTH_SHORT).show();
                     mList.clear();
+
                 }
 
                 break;
