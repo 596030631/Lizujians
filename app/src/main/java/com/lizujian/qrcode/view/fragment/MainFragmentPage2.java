@@ -186,11 +186,7 @@ public class MainFragmentPage2 extends BaseFragment<MainActivity> implements Vie
                     Bitmap bitmap = QrCodeUtil.createQRCodeBitmap(info,600,600);
                     qrcode.setImageBitmap(bitmap);
                 }catch (Exception e){
-                    Toast.makeText(mContext, "数据不完整", Toast.LENGTH_SHORT).show();
-                    mList.clear();
-
                 }
-
                 break;
         }
     }

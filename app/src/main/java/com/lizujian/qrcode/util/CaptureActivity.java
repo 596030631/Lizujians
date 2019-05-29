@@ -403,6 +403,7 @@ public final class CaptureActivity extends Activity implements
 		commondDialog = new CommondDialog(this,R.style.dialog,ResultParser.parseResult(rawResult).toString(),new CommondDialog.OnCloseListener(){
 
 
+			//存入数据库
 
 
 

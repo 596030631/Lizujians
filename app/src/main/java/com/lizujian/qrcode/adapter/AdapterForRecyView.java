@@ -36,7 +36,7 @@ public class AdapterForRecyView extends RecyclerView.Adapter<AdapterForRecyView.
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onBindViewHolder(@NonNull final MyAdapter myAdapter, final int i) {
-        myAdapter.index.setText("第"+(i+1)+"条");
+        myAdapter.index.setText("批号："+mList.get(i).getT1().getBatch());
         myAdapter.bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +57,7 @@ public class AdapterForRecyView extends RecyclerView.Adapter<AdapterForRecyView.
                 s.add(mList.get(i).getT2().getJgcs());
                 s.add(mList.get(i).getT2().getJgzq());
                 s.add(mList.get(i).getT2().getGlbz());
+                s.add(mList.get(i).getT2().getSjfs());
                 s.add(mList.get(i).getT2().getBatch());
                 new SelfDialog(mContext,2,s).show();
             }

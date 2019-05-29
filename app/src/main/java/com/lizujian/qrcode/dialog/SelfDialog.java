@@ -135,7 +135,7 @@ public class SelfDialog extends Dialog {
                     lyfs.setText(mList.get(0));
                     nnzk.setText(mList.get(1));
                     czy.setText(mList.get(2));
-                    //batch.setText(mList.get(3));
+                    batch.setText(mList.get(3));
                     show = false;
                     break;
                 case 2:
@@ -143,21 +143,21 @@ public class SelfDialog extends Dialog {
                     jgzq.setText(mList.get(1));
                     glbz.setText(mList.get(2));
                     sjfs.setText(mList.get(3));
-                    //batch.setText(mList.get(4));
+                    batch.setText(mList.get(4));
                     show = false;
                     break;
                 case 3:
                     ysy.setText(mList.get(0));
                     cph.setText(mList.get(1));
                     cnwd.setText(mList.get(2));
-                    //batch.setText(mList.get(3));
+                    batch.setText(mList.get(3));
                     show = false;
                     break;
                 case 4:
                     xsfs.setText(mList.get(0));
                     bzrq.setText(mList.get(1));
                     lsjg.setText(mList.get(2));
-                    //batch.setText(mList.get(3));
+                    batch.setText(mList.get(3));
                     show = false;
                     break;
             }

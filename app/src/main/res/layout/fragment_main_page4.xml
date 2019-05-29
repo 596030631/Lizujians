@@ -46,6 +46,7 @@
                 android:layout_height="0.1dp"
                 android:background="#111"/>
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -78,6 +79,7 @@
                 android:layout_height="0.1dp"
                 android:background="#111"/>
             <TextView
+                android:id="@+id/nicheng"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -90,12 +92,12 @@
                 android:layout_height="0.1dp"
                 android:background="#111"/>
             <TextView
+                android:id="@+id/counts"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="32"/>
+                android:textSize="25dp"/>
             <View
                 android:layout_marginRight="25dp"
                 android:layout_width="match_parent"
@@ -105,6 +107,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/freshs"
         android:gravity="center"
         android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"
@@ -115,6 +118,36 @@
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:textSize="25dp"
-        android:text="退出登录"
+        android:text="刷新"
+        android:background="@drawable/bg_edit_text"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="25dp"
+       android:layout_marginRight="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dp"
+        android:text="注销"
+        android:background="@drawable/bg_edit_text"/>
+
+    <TextView
+        android:id="@+id/quit"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="25dp"
+       android:layout_marginRight="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dp"
+        android:text="退出"
         android:background="@drawable/bg_edit_text"/>
 </LinearLayout>
