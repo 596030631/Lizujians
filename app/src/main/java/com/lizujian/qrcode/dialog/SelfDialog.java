@@ -124,7 +124,7 @@ public class SelfDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_frag2_1);
+        setContentView(R.layout.dialog_frag2);
         getBatchNumber();
         layout(mIndex);
         initView();

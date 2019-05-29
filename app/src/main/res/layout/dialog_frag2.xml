@@ -40,6 +40,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:layout_marginRight="20dp"
                 android:maxLines="1"
+                android:text="青青草原牧场"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
@@ -61,6 +62,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:layout_marginRight="20dp"
                 android:maxLines="1"
+                android:text="良好"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
@@ -83,6 +85,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:layout_marginRight="20dp"
                 android:maxLines="1"
+                android:text="张三"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
@@ -144,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:text="蒙牛"
                     android:background="@drawable/bg_edit_text"
                     android:maxLines="1" />
             </LinearLayout>
@@ -167,6 +171,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="3周"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -189,6 +194,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="一级"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -210,6 +216,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="巴氏"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -275,6 +282,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="李四"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -297,6 +305,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="鲁H88888"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -318,6 +327,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="15℃"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -378,6 +388,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="线上/下"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -400,6 +411,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="2019-12-12"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
@@ -421,6 +433,7 @@
                     android:background="@drawable/bg_edit_text"
                     android:layout_marginRight="20dp"
                     android:maxLines="1"
+                    android:text="78RMB"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
