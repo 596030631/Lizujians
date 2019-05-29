@@ -1,5 +1,7 @@
 package com.lizujian.qrcode.view.fragment;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,6 +36,7 @@ public class MainFragmentPage4 extends BaseFragment<MainActivity> {
         PreferencesService ps = APP.getPreferencesService();
         userName.setText(ps.getValue(APP.USER,"lizujian"));
         counts.setText(ps.getValue("counts","-1"));
+
     }
 
     @OnClick(R.id.freshs)
@@ -44,10 +47,24 @@ public class MainFragmentPage4 extends BaseFragment<MainActivity> {
     }
 @OnClick(R.id.exit)
     void exit(){
-        userName.setText("");
-        nicheng.setText("");
+    new AlertDialog.Builder(this.getContext())
+            .setTitle("注销")
+            .setMessage("确认注销？")
+            .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            })
+            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    userName.setText("未登录");
+                    dialog.dismiss();
+                }
+            })
+            .create().show();
     }
-
 
     @OnClick(R.id.quit)
     void quit(){
