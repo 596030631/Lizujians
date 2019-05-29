@@ -16,8 +16,8 @@ import com.lizujian.qrcode.bean.MilkInfo;
 import com.lizujian.qrcode.dialog.SelfDialog;
 import com.lizujian.qrcode.sql.PreferencesService;
 import com.lizujian.qrcode.sql.action.SelectRecord;
-import com.lizujian.qrcode.view.MainActivity;
 import com.lizujian.qrcode.util.makerqrcode.QrCodeUtil;
+import com.lizujian.qrcode.view.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -172,18 +172,23 @@ public class MainFragmentPage2 extends BaseFragment<MainActivity> implements Vie
                 break;
 
             case R.id.btn_make_qrcode:
-
                 List<MilkInfo> mList = getDataFromSql();
-                String info =
-                        mList.get(mList.size()-1).getT1().getLyfs()+","       +mList.get(mList.size()-1).getT1().getNnzk()+","    +mList.get(mList.size()-1).getT1().getCzy()+","+
-                        mList.get(mList.size()-1).getT2().getJgcs()+","       +mList.get(mList.size()-1).getT2().getJgzq()+","    +mList.get(mList.size()-1).getT2().getGlbz()+","     +mList.get(mList.size()-1).getT2().getSjfs()+","+
-                        mList.get(mList.size()-1).getT3().getYsy()+","        +mList.get(mList.size()-1).getT3().getCph()+","     +mList.get(mList.size()-1).getT3().getCnwd()+","+
-                        mList.get(mList.size()-1).getT4().getXsfs()+","       +mList.get(mList.size()-1).getT4().getBzrq()+","    +mList.get(mList.size()-1).getT4().getLsjg();
+                try{
+                    String info =
+                            mList.get(mList.size()-1).getT1().getLyfs()+","       +mList.get(mList.size()-1).getT1().getNnzk()+","    +mList.get(mList.size()-1).getT1().getCzy()+","+
+                                    mList.get(mList.size()-1).getT2().getJgcs()+","       +mList.get(mList.size()-1).getT2().getJgzq()+","    +mList.get(mList.size()-1).getT2().getGlbz()+","     +mList.get(mList.size()-1).getT2().getSjfs()+","+
+                                    mList.get(mList.size()-1).getT3().getYsy()+","        +mList.get(mList.size()-1).getT3().getCph()+","     +mList.get(mList.size()-1).getT3().getCnwd()+","+
+                                    mList.get(mList.size()-1).getT4().getXsfs()+","       +mList.get(mList.size()-1).getT4().getBzrq()+","    +mList.get(mList.size()-1).getT4().getLsjg();
 
-                Log.e("TAG",info);
-                //生成二维码
-                Bitmap bitmap = QrCodeUtil.createQRCodeBitmap(info,600,600);
-                qrcode.setImageBitmap(bitmap);
+                    Log.e("TAG",info);
+                    //生成二维码
+                    Bitmap bitmap = QrCodeUtil.createQRCodeBitmap(info,600,600);
+                    qrcode.setImageBitmap(bitmap);
+                }catch (Exception e){
+                    Toast.makeText(mContext, "数据不完整", Toast.LENGTH_SHORT).show();
+                    mList.clear();
+                }
+
                 break;
         }
     }
